@@ -70,10 +70,6 @@ li:hover {
   box-sizing: border-box;
 }
 
-.desktop_hero_img {
-  display: none;
-}
-
 .hero_section img {
   width: 100%;
   margin: 0.5rem 0;
@@ -144,7 +140,6 @@ hr {
 
 .section_item {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -210,17 +205,13 @@ footer {
 
   .container {
     display: flex;
-    min-width: 65%;
+    flex-direction: column;
     gap: 1.5rem;
   }
 
   aside {
     margin: 0;
-    min-width: 35%;
-  }
-
-  .mobile_hero_img {
-    display: none;
+    min-width: 30%;
   }
 
   .mobile_nav {
@@ -237,10 +228,6 @@ footer {
     color: var(--dark_grayish_blue);
     gap: 2rem;
     cursor: pointer;
-  }
-
-  .desktop_hero_img {
-    display: block;
   }
 
   .hero_section img {
@@ -274,5 +261,16 @@ footer {
 
   .section_item {
     width: 33%;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    padding: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
   }
 }
